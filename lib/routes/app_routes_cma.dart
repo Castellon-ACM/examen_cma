@@ -22,6 +22,16 @@ class AppRoutes {
       icon: Icons.list_alt, 
       name: 'ListView Screen', 
       screen: const ListViewScreen()),
+      MenuOption(
+      route: 'pistas', 
+      icon: Icons.list_alt, 
+      name: 'Pistas Screen', 
+      screen: const PistasScreen()),
+      MenuOption(
+      route: 'monitores', 
+      icon: Icons.list_alt, 
+      name: 'Monitores Screen', 
+      screen: const MonitoresScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
