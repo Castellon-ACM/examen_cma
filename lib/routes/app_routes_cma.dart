@@ -17,6 +17,11 @@ class AppRoutes {
       icon: Icons.list_alt, 
       name: 'Signin Screen', 
       screen: const SigninScreen()),
+      MenuOption(
+      route: 'listview', 
+      icon: Icons.list_alt, 
+      name: 'ListView Screen', 
+      screen: const ListViewScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
