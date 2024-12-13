@@ -1,3 +1,4 @@
+import 'package:examen_cma/widgets/widget_pistas_screen_cma.dart';
 import 'package:flutter/material.dart';
 
 class PistasScreen extends StatelessWidget {
@@ -18,9 +19,17 @@ class PistasScreen extends StatelessWidget {
         )
       ],
       ),
-      body: const Center(
-         child: Text('PistasScreen'),
-      ),
+     body: ListView(
+        padding: const EdgeInsets.symmetric( horizontal: 20, vertical: 10),
+        children: const [
+          WidgetPistasScreen(imageUrl: 'https://sm.ign.com/t/ign_es/news/g/george-rr-/george-rr-martin-was-out-of-the-loop-in-later-game-of-throne_e9vf.h720.jpg', texto: 'fhwevbhwebvwhebvhyewfbvwefivbefihvbhiefbvief'),
+          SizedBox(height: 10),
+          WidgetPistasScreen(imageUrl: 'https://sm.ign.com/t/ign_es/news/g/george-rr-/george-rr-martin-was-out-of-the-loop-in-later-game-of-throne_e9vf.h720.jpg', texto: 'vnbefhbvehbvehikvbiefvb iefbviebeifv'),
+          SizedBox(height: 10),
+          WidgetPistasScreen(imageUrl: 'https://sm.ign.com/t/ign_es/news/g/george-rr-/george-rr-martin-was-out-of-the-loop-in-later-game-of-throne_e9vf.h720.jpg', texto: 'jwdfgbhxwdbvhwbvhkiwbvihwrfbviwfbv',),
+          SizedBox(height: 10),
+        ]
+     )
     );
   }
 }
